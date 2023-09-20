@@ -1,6 +1,6 @@
-/*===== MENU SHOW =====*/
-const showMenu = (toggleId, navId) => {
-  const toggle = document.getElementById(toggleId),
+/* MENU SHOW */
+let onMenu = (toggleId, navId) => {
+  let toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId);
 
   if (toggle && nav) {
@@ -9,28 +9,28 @@ const showMenu = (toggleId, navId) => {
     });
   }
 };
-showMenu("nav-toggle", "nav-menu");
+onMenu("nav-toggle", "nav-menu");
 
-/*===== REMOVE MENU MOBILE =====*/
-const navLink = document.querySelectorAll(".nav__link");
+/* REMOVE MENU MOBILE */
+let navigationLink = document.querySelectorAll(".nav__link");
 
 function linkAction() {
-  const navMenu = document.getElementById("nav-menu");
+  let navMenu = document.getElementById("nav-menu");
   navMenu.classList.remove("show");
 }
-navLink.forEach((n) => n.addEventListener("click", linkAction));
+navigationLink.forEach((n) => n.addEventListener("click", linkAction));
 
-/*===== SCROLL SECTIONS ACTIVE LINK =====*/
-const sections = document.querySelectorAll("section[id]");
+/* SCROLL SECTIONS ACTIVE LINK */
+let sections = document.querySelectorAll("section[id]");
 
 window.addEventListener("scroll", scrollActive);
 
 function scrollActive() {
-  const scrollY = window.pageYOffset;
+  let scrollY = window.pageYOffset;
 
   sections.forEach((current) => {
-    const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 50;
+    let sectionHeight = current.offsetHeight;
+    let sectionTop = current.offsetTop - 50;
     sectionId = current.getAttribute("id");
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
@@ -45,8 +45,8 @@ function scrollActive() {
   });
 }
 
-/*===== SCROLL REVEAL ANIMATION =====*/
-const sr = ScrollReveal({
+/* SCROLL REVEAL ANIMATION */
+let sr = ScrollReveal({
   origin: "top",
   distance: "80px",
   duration: 1000,
