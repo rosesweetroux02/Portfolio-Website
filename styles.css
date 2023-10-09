@@ -299,6 +299,11 @@ img {
 }
 
 /*CONTACT*/
+
+form {
+  justify-items: center;
+  width: 450px;
+}
 .contact__container {
   row-gap: 2rem;
 }
@@ -339,14 +344,14 @@ img {
 
 /*FOOTER*/
 .footer {
-  background-color: var(--dark-color);
+  background-color: whitesmoke;
 }
 .footer__container {
   row-gap: 1rem;
 }
 .footer__title {
   font-size: var(--normal-font-size);
-  color: var(--white-color);
+  color: var(--text-color);
   margin-bottom: var(--mb-2);
 }
 .footer__social {
@@ -429,14 +434,6 @@ img {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     column-gap: 2rem;
-  }
-
-  .contact__container {
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-  }
-  .contact__form {
-    width: 380px;
   }
 
   .footer__container {
