@@ -59,6 +59,17 @@ body {
   color: var(--text-color);
   line-height: 1.6;
 }
+button {
+  font-family: italic;
+  background-color: whitesmoke;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 h1,
 h2,
 p {
