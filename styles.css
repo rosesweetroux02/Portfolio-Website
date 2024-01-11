@@ -8,9 +8,9 @@
 
 /*COLORS*/
 :root {
-  --first-color: #b3888d;
+  /* --first-color: #000;*/
   --white-color: #fafaff;
-  --dark-color: #2a3b47;
+  --dark-color: rgb(158, 153, 153);
   --text-color: #697477;
 }
 
@@ -56,12 +56,13 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
+  background-color: #212f3f;
   color: var(--text-color);
   line-height: 1.6;
 }
 button {
   font-family: italic;
-  background-color: whitesmoke;
+  background-color: pink;
   color: white;
   padding: 10px 10px;
   border: none;
@@ -123,13 +124,14 @@ img {
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
 }
+
 .l-header {
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--first-color);
+  background-color: #212f3f;
 }
 
 /*NAV*/
@@ -188,6 +190,16 @@ img {
 }
 
 /*HOME*/
+a {
+  color: #d60b60;
+  font-weight: 500;
+}
+
+a .d_buttons {
+  color: white;
+  font-weight: 700;
+}
+
 .home {
   position: relative;
 
@@ -226,6 +238,7 @@ img {
   justify-items: center;
   row-gap: 2rem;
   text-align: center;
+  background-color: #f4f1e8;
 }
 .about__img {
   display: flex;
@@ -251,8 +264,42 @@ img {
   color: var(--first-color);
 }
 
+.about__container {
+  justify-items: center;
+  row-gap: 2rem;
+  text-align: center;
+  background-color: #f4f1e8;
+}
+.about__img {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+.about__subtitle {
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  margin-bottom: var(--mb-1);
+}
+.about__text {
+  margin-bottom: var(--mb-4);
+}
+
+.about__social-icon {
+  font-size: 1.4rem;
+  margin: 0 var(--mb-1);
+}
+.about__social-icon:hover {
+  color: var(--first-color);
+}
+.whois_button {
+  background-color: #d60b60;
+}
+
 .cv_button {
-  background-color: var(--first-color);
+  background-color: #212f3f;
+  color: white;
 }
 
 /*SKILLS*/
